@@ -3,6 +3,8 @@ organization := "com.wellfactored"
 
 scalaVersion := "2.11.8"
 
+tutSettings
+
 lazy val `property-info` =
   (project in file("."))
     .enablePlugins(GitVersioning)
