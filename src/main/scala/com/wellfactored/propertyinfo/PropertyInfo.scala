@@ -4,8 +4,7 @@ import shapeless._
 import shapeless.ops.hlist.ToTraversable
 import shapeless.ops.record.{Keys, Values}
 
-
-case class Property[T](name: String, ty: Typeable[T])
+case class Property[A](name: String, ty: Typeable[A])
 
 /**
   * A Type Class that abstracts information about the properties of a type. For
