@@ -11,7 +11,7 @@ case class Property[A](name: String, ty: Typeable[A])
   * a case class these properties would be its members.
   */
 trait PropertyInfo[T] {
-  def namesAndTypes: List[Property[_]]
+  def namesAndTypes: Seq[Property[_]]
 }
 
 /**

@@ -13,5 +13,7 @@ lazy val `property-info` =
 git.useGitDescribe in ThisBuild := true
 
 libraryDependencies ++= Seq(
-  "com.chuusai" %% "shapeless" % "2.3.2"
+  "com.chuusai" %% "shapeless" % "2.3.2",
+
+  "org.scalatest" %% "scalatest" % "3.0.0" % "test"
 )
