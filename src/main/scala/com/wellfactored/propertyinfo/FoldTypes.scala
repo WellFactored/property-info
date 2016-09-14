@@ -4,20 +4,20 @@ import shapeless._
 
 /**
   * Shapeless magic - I have to admit to not fully understanding this, but it is used to fold
-  * over an HList of type at compile time to produce a List of `Typeable`s
+  * over an HList of types at compile time to produce a List of `Typeable`s
   */
 object FoldTypes {
-  implicit def hnilStrings: FoldTypes[HNil] =
+  implicit def hnilTypeables: FoldTypes[HNil] =
     new FoldTypes[HNil] {
       def apply() = List()
     }
 
-  implicit def hconsStrings[H, T <: HList](implicit th: Typeable[H], ft: FoldTypes[T]): FoldTypes[H :: T] =
-    new FoldTypes[H :: T] {
+  implicit def hconsTypeables[T, H <: HList](implicit th: Typeable[T], ft: FoldTypes[H]): FoldTypes[T :: H] =
+    new FoldTypes[T :: H] {
       def apply() = th :: ft()
     }
 }
 
-trait FoldTypes[L <: HList] {
+trait FoldTypes[H <: HList] {
   def apply(): List[Typeable[_]]
 }
