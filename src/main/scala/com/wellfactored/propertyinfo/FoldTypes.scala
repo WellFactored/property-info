@@ -14,7 +14,7 @@ object FoldTypes {
 
   implicit def hconsTypeables[T, H <: HList](implicit th: Typeable[T], ft: FoldTypes[H]): FoldTypes[T :: H] =
     new FoldTypes[T :: H] {
-      def apply() = th :: ft()
+      def apply(): List[Typeable[_]] = th :: ft()
     }
 }
 
