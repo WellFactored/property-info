@@ -1,14 +1,9 @@
 publishMavenStyle in ThisBuild := true
 
-useGpg := true
+pgpPublicRing := file("/Users/dec/.sonatype/pubring.gpg")
+pgpSecretRing := file("/Users/dec/.sonatype/secring.gpg")
 
-usePgpKeyHex("46C41F3C")
-
-publishTo in ThisBuild := {
-  val nexus = "https://oss.sonatype.org/"
-  if (isSnapshot.value) Some("snapshots" at nexus + "content/repositories/snapshots")
-  else Some("releases" at nexus + "service/local/staging/deploy/maven2")
-}
+publishTo in ThisBuild := sonatypePublishTo.value
 
 pomIncludeRepository in ThisBuild := { _ => false }
 
