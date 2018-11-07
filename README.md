@@ -1,2 +1,3 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0663952f56e54e3baf8e1aa38b69d2f3)](https://www.codacy.com/app/doug/property-info?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=WellFactored/property-info&amp;utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/WellFactored/property-info.svg?style=svg)](https://circleci.com/gh/WellFactored/property-info)
+[![maven central](https://maven-badges.herokuapp.com/maven-central/com.wellfactored/property-info_2.12/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.wellfactored/property-info_2.12)
