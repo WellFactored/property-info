@@ -19,5 +19,5 @@ libraryDependencies ++= Seq(
   "com.chuusai" %% "shapeless" % "2.3.3",
   compilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
 
-  "org.scalatest" %% "scalatest" % "3.0.6" % "test"
+  "org.scalatest" %% "scalatest" % "3.0.7" % "test"
 )
