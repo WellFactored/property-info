@@ -1,9 +1,8 @@
-
 organization := "com.wellfactored"
 
-crossScalaVersions := Seq("2.11.12", "2.12.7")
+crossScalaVersions := Seq("2.11.12", "2.12.7", "2.12.8", "2.12.9", "2.13.0")
 
-scalaVersion := "2.12.7"
+scalaVersion := "2.13.0"
 
 lazy val `property-info` =
   (project in file("."))
@@ -17,7 +16,5 @@ wartremoverErrors -= Wart.Any
 
 libraryDependencies ++= Seq(
   "com.chuusai" %% "shapeless" % "2.3.3",
-  compilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
-
-  "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+  "org.scalatest" %% "scalatest" % "3.0.8" % "test"
 )

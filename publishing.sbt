@@ -1,7 +1,7 @@
 publishMavenStyle in ThisBuild := true
 
-pgpPublicRing := file("/Users/dec/.sonatype/pubring.gpg")
-pgpSecretRing := file("/Users/dec/.sonatype/secring.gpg")
+pgpPublicRing := file("/Users/dec/Documents/.sonatype/pubring.gpg")
+pgpSecretRing := file("/Users/dec/Documents/.sonatype/secring.gpg")
 
 publishTo in ThisBuild := sonatypePublishTo.value
 
