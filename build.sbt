@@ -1,6 +1,6 @@
 organization := "com.wellfactored"
 
-crossScalaVersions := Seq("2.11.12", "2.12.7", "2.12.8", "2.12.9", "2.13.0")
+crossScalaVersions := Seq("2.11.12", "2.12.9", "2.13.0")
 
 scalaVersion := "2.13.0"
 
