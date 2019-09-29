@@ -4,7 +4,7 @@ resolvers += "Typesafe Repository" at "https://repo.typesafe.com/typesafe/releas
 addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "1.0.0")
 addSbtPlugin("com.jsuereth" % "sbt-pgp" % "2.0.0")
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.6.0")
-addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "3.7")
+addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "3.8")
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.5.1")
 addSbtPlugin("com.codacy" % "sbt-codacy-coverage" % "3.0.2")
 addSbtPlugin("org.tpolecat" % "tut-plugin" % "0.6.12")
