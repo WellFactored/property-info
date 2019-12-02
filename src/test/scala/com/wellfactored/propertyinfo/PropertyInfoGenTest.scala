@@ -1,8 +1,9 @@
 package com.wellfactored.propertyinfo
 
-import org.scalatest.{Matchers, WordSpecLike}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.wordspec.AnyWordSpecLike
 
-class PropertyInfoGenTest extends WordSpecLike with Matchers with PropertyInfoGen {
+class PropertyInfoGenTest extends AnyWordSpecLike with Matchers with PropertyInfoGen {
 
   "generator" should {
     "create an instance of PropertyInfo for a case class" in {
