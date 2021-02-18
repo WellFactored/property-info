@@ -16,5 +16,5 @@ wartremoverErrors -= Wart.Any
 
 libraryDependencies ++= Seq(
   "com.chuusai" %% "shapeless" % "2.3.3",
-  "org.scalatest" %% "scalatest" % "3.2.3" % "test"
+  "org.scalatest" %% "scalatest" % "3.2.4" % "test"
 )
