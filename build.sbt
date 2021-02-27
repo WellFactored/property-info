@@ -1,8 +1,8 @@
 organization := "com.wellfactored"
 
-crossScalaVersions := Seq("2.11.12", "2.12.13", "2.13.3")
+crossScalaVersions := Seq("2.11.12", "2.12.13", "2.13.5")
 
-scalaVersion := "2.13.3"
+scalaVersion := "2.13.5"
 
 lazy val `property-info` =
   (project in file("."))
