@@ -15,6 +15,6 @@ wartremoverErrors ++= Warts.unsafe
 wartremoverErrors -= Wart.Any
 
 libraryDependencies ++= Seq(
-  "com.chuusai" %% "shapeless" % "2.3.3",
+  "com.chuusai" %% "shapeless" % "2.3.4",
   "org.scalatest" %% "scalatest" % "3.2.7" % "test"
 )
